@@ -270,6 +270,7 @@ button {
 }
 
 .main-screen {
+    overflow: hidden;
 
     .container {
         display: flex;
@@ -543,6 +544,15 @@ button {
     .modal-dialog {
         max-width: 100vw;
     }
+
+    .close {
+        display: none;
+        z-index: 1;
+
+        position: absolute;
+        top: -25px;
+        right: 10px;
+    }
 }
 
 .modal-backdrop.show {
@@ -653,6 +663,9 @@ button {
         display: block;
     }
 
+    #portfolioModal .close {
+        display: block;
+    }
 }
 
 
@@ -758,6 +771,10 @@ button {
 
     .portfolio__item {
         margin: 1px 0;
+    }
+
+    .portfolio .container {
+        padding: 95px 0 80px;
     }
 }
 

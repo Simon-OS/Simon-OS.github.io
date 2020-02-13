@@ -192,6 +192,9 @@ button {
   font-family: "Montserrat Bold", sans-serif;
   font-size: 40px;
 }
+.main-screen {
+  overflow: hidden;
+}
 .main-screen .container {
   display: flex;
   justify-content: space-between;
@@ -380,6 +383,13 @@ button {
 #portfolioModal .modal-dialog {
   max-width: 100vw;
 }
+#portfolioModal .close {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: -25px;
+  right: 10px;
+}
 .modal-backdrop.show {
   opacity: 0.8;
 }
@@ -455,6 +465,9 @@ button {
   .header-menu__btn-toggle {
     display: block;
   }
+  #portfolioModal .close {
+    display: block;
+  }
 }
 @media (max-width: 768px) {
   .section-header {
@@ -526,6 +539,9 @@ button {
   }
   .portfolio__item {
     margin: 1px 0;
+  }
+  .portfolio .container {
+    padding: 95px 0 80px;
   }
 }
 @media (max-width: 375px) {
