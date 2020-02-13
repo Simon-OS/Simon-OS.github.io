@@ -30,8 +30,11 @@
 
 
 
-*:hover {
-    transition: all .2s linear;
+a, button {
+
+    &:hover {
+        transition: all .2s linear;
+    }
 }
 
 ::selection {
@@ -41,7 +44,7 @@
 
 body {
     height: 10000px;            // !!!
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -63,8 +66,8 @@ a {
 }
 
 button {
+    outline: none !important;
     background: none;
-    outline: none;
     border: none;
 }
 
@@ -75,13 +78,25 @@ button {
     padding-right: 20px;
 }
 
+.section-header {
+    text-align: center;
+
+    font-family: "Poppins Bold", sans-serif;
+    font-size: 2.625em;
+    color: #000;
+}
+
+.slick-slide {
+    outline: none;
+}
+
 
 // header-contacts
 
 .header-contacts {
     background-color: #F9FAFD;
 
-    font-family: "Varela Round";
+    font-family: "Varela Round", sans-serif;
     font-size: 14px;
 
     overflow: hidden;
@@ -106,7 +121,7 @@ button {
 
 .header-menu {
     border-bottom: 1px solid gainsboro;
-    font-family: "Varela Round";
+    font-family: "Varela Round", sans-serif;
 
     .container {
         padding-top: 13.8px;
@@ -243,13 +258,13 @@ button {
     margin: 2px 0 0 0;
     padding-left: 10px;
 
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 39.9px;
     font-weight: 500;
     line-height: 1.61em;
 
     strong {
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", sans-serif;
         font-size: 40px;
     }
 }
@@ -289,21 +304,23 @@ button {
 .about-us__header {
     margin-bottom: 0;
 
-    font-family: "Montserrat Light";
+    font-family: "Montserrat Light", sans-serif;
     font-size: 50px;
     line-height: 1.4em;
     
     b {
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", sans-serif;
         text-shadow: 10px 10px 20px rgba(0,0,0,0.11);
     }
 }
 
-.button-blue-bg {
+.about-us__button {
     margin-top: 56px;
-
-    border-radius: 50px 50px 50px 50px;
     padding: 11px 50px 11px 50px;
+}
+
+.button-darkblue-bg {
+    border-radius: 50px;
 
     color: #FFFFFF;
     background-color: #3425F4;
@@ -344,7 +361,7 @@ button {
     font-size: 2.6em;
     margin-bottom: 0.39em;
 
-    font-family: "Archivo Black";
+    font-family: "Archivo Black", sans-serif;
     color: #FFFFFF;
 }
 
@@ -352,6 +369,11 @@ button {
 // services
 
 .services {
+
+    .container {
+        padding-top: 81px;
+        padding-bottom: 75px;
+    }
     
     .row {
         padding: 0px 23px;
@@ -359,11 +381,10 @@ button {
 }
 
 .services__header {
-    padding-top: 81px;
     margin-bottom: 26px;
 
     text-align: center;
-    font-family: "Poppins Bold";
+    font-family: "Poppins Bold", sans-serif;
     font-size: 2.6em;
 }
 
@@ -395,6 +416,190 @@ button {
 
     .wrapper {
         padding-left: 17px;
+    }
+}
+
+
+// worked-with
+
+.worked-with {
+    background-color: #f9fafd;
+
+    padding-top: 81px;
+    padding-bottom: 115px;
+}
+
+.worked-with__header {
+    margin-bottom: 1.3rem;
+}
+
+.worked-with__slider {
+    padding: 0px 40px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 45%;
+
+    color: #8c8c8c;
+
+    i {
+        font-size: 20px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.slick-disabled {
+        color: #8d8d8d80;
+    }
+
+    &.left {
+        left: 0;
+    }
+
+    &.right {
+        right: 0;
+    }
+}
+
+
+
+// portfolio
+
+.portfolio {
+
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .container {
+        padding: 95px 0 100px;
+    }
+
+    .button-blue-bg svg {
+        width: 14px;
+        margin-left: 10px;
+    }
+} 
+
+.portfolio__row {
+    margin: 4px;
+    padding: 0 16px;
+}
+
+.portfolio__item {
+    padding-left: 2px;
+    padding-right: 2px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+    }
+
+    &:hover .portfolio__item-caption {
+        transform: translateY(-45px);
+    }
+}
+
+.portfolio__item-caption {
+    width: 100%;
+
+    background: rgba(255,255,255,.8);
+    padding: 11px 0;
+
+    position: absolute;
+    bottom: -45px;
+
+    transition: all .2s ease-in-out;
+
+    color: #333;
+    font-size: 13px;
+    font-weight: 400;
+    text-indent: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#portfolioModal {
+
+    .modal-body {
+        padding: 0;
+        margin: 0 auto;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .modal-content {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .modal-dialog {
+        max-width: 100vw;
+    }
+}
+
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.button-blue-bg {
+    margin: 0 auto;
+    display: block;
+
+    padding: 6px 40px;
+    margin-top: 52px;
+
+    color: #fff;
+    background-color: #2185f5;
+
+    border-radius: 50px;
+    border: 1px solid#2185f5;
+    box-shadow: 0px 10px 30px -8px rgba(0,0,0,.16);
+
+    &:hover {
+        color: #ff7052;
+        background-color: #fff;
+        border-color: #ff7052;
+
+        svg path {
+            transition: .5s;
+            fill: #ff7052;
+        }
+    }
+}
+
+
+// apps
+
+.apps {
+    background-color: #2185f5;
+
+    .container {
+        padding: 40px 0 77px;
+    }
+}
+
+.apps__slider {
+    margin: 0 10px;
+
+    .slick-arrow {
+        top: 50%;
+        color: rgba(238, 238, 238, 0.9);
+
+        &.slick-disabled {
+            color: #ffffff6b;
+        }
+    }
+    
+    button {
+        z-index: 1;
     }
 }
 
@@ -452,6 +657,10 @@ button {
 
 
 @media (max-width: 768px) {
+
+    .section-header {
+        font-size: 1.755em;
+    }
 
     .header-contacts {
         a {
@@ -539,5 +748,28 @@ button {
 
     .services__item-header {
         margin-top: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .portfolio__row {
+        margin: 0;
+    }
+
+    .portfolio__item {
+        margin: 1px 0;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .button-blue-bg {
+        width: 89vw;
+        font-size: 84%;
+
+        svg {
+            position: relative;
+            bottom: 1px;
+        }
     }
 }
