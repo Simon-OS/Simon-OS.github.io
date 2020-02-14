@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(".worked-with__slider").slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         dots: true,
@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
 
     $(".apps__slider").slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
@@ -39,6 +39,40 @@ $(document).ready(function() {
         prevArrow: `<button class="left"><i class="fa fa-chevron-left"></i></button>`,
         nextArrow: `<button class="right"><i class="fa fa-chevron-right"></i></button>`,
     });
+
+    $(".clients__slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3500,
+        infinite: false,
+        arrows: false
+    });
+
+    $(".technologies__slider").slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      prevArrow: `<button class="left"><i class="fa fa-chevron-left"></i></button>`,
+      nextArrow: `<button class="right"><i class="fa fa-chevron-right"></i></button>`,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+      ]
+  });
 
 });
 
