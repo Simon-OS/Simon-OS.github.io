@@ -34,24 +34,10 @@ $(document).ready(function() {
         dots: true,
         autoplay: true,
         autoplaySpeed: 2500,
+        fade: true,
+        cssEase: 'linear',
         prevArrow: `<button class="left"><i class="fa fa-chevron-left"></i></button>`,
         nextArrow: `<button class="right"><i class="fa fa-chevron-right"></i></button>`,
-        // responsive: [
-        //     {
-        //       breakpoint: 1024,
-        //       settings: {
-        //         slidesToShow: 2,
-        //         slidesToScroll: 2
-        //       }
-        //     },
-        //     {
-        //       breakpoint: 768,
-        //       settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1
-        //       }
-        //     }
-        // ]
     });
 
 });
