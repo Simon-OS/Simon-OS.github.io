@@ -301,7 +301,7 @@ button {
 .worked-with {
   background-color: #f9fafd;
   padding-top: 81px;
-  padding-bottom: 115px;
+  padding-bottom: 135px;
 }
 .worked-with__header {
   margin-bottom: 1.3rem;
@@ -309,9 +309,24 @@ button {
 .worked-with__slider {
   padding: 0px 40px;
 }
+.worked-with__slider .slick-dots {
+  position: relative;
+  top: 119px;
+}
+.worked-with__slider .slick-dots li {
+  width: 18px;
+  margin: 0;
+}
+.worked-with__slider .slick-dots li button {
+  padding: 0;
+}
+.worked-with__slider .slick-dots li button::before {
+  color: #4064d7;
+  font-size: 7px;
+}
 .slick-arrow {
   position: absolute;
-  top: 45%;
+  top: 58%;
   color: #8c8c8c;
 }
 .slick-arrow i {
@@ -417,20 +432,34 @@ button {
   background-color: #2185f5;
 }
 .apps .container {
-  padding: 40px 0 77px;
+  padding: 40px 0 9px;
 }
 .apps__slider {
   margin: 0 10px;
 }
+.apps__slider button {
+  z-index: 1;
+}
 .apps__slider .slick-arrow {
-  top: 50%;
+  top: 47%;
   color: rgba(238, 238, 238, 0.9);
 }
 .apps__slider .slick-arrow.slick-disabled {
   color: #ffffff6b;
 }
-.apps__slider button {
-  z-index: 1;
+.apps__slider .slick-dots {
+  position: relative;
+  top: 28px;
+}
+.apps__slider .slick-dots li {
+  width: 18px;
+  margin: 0;
+}
+.apps__slider .slick-dots li button {
+  padding: 0;
+}
+.apps__slider .slick-dots li button::before {
+  font-size: 7px;
 }
 @media (max-width: 1280px) {
   .main-screen img {
@@ -464,6 +493,12 @@ button {
   }
   .header-menu__btn-toggle {
     display: block;
+  }
+  .worked-with {
+    padding-bottom: 85px;
+  }
+  .worked-with__slider .slick-dots {
+    top: 50px;
   }
   #portfolioModal .close {
     display: block;
@@ -531,6 +566,9 @@ button {
   }
   .services__item-header {
     margin-top: 18px;
+  }
+  .worked-with {
+    padding-bottom: 95px;
   }
 }
 @media (max-width: 575px) {

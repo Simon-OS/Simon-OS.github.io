@@ -427,7 +427,7 @@ button {
     background-color: #f9fafd;
 
     padding-top: 81px;
-    padding-bottom: 115px;
+    padding-bottom: 135px;
 }
 
 .worked-with__header {
@@ -436,11 +436,30 @@ button {
 
 .worked-with__slider {
     padding: 0px 40px;
+
+    .slick-dots {
+        position: relative;
+        top: 119px;
+
+        li {
+            width: 18px;
+            margin: 0;
+        }
+    }
+
+    .slick-dots li button {
+        padding: 0;
+
+        &::before {
+            color: #4064d7;
+            font-size: 7px;
+        }
+    }
 }
 
 .slick-arrow {
     position: absolute;
-    top: 45%;
+    top: 58%;
 
     color: #8c8c8c;
 
@@ -592,24 +611,42 @@ button {
     background-color: #2185f5;
 
     .container {
-        padding: 40px 0 77px;
+        padding: 40px 0 9px;
     }
 }
 
 .apps__slider {
     margin: 0 10px;
 
+    button {
+        z-index: 1;
+    }
+
     .slick-arrow {
-        top: 50%;
+        top: 47%;
         color: rgba(238, 238, 238, 0.9);
 
         &.slick-disabled {
             color: #ffffff6b;
         }
     }
+
+    .slick-dots {
+        position: relative;
+        top: 28px;
+
+        li {
+            width: 18px;
+            margin: 0;
+        }
+
+        li button {
+            padding: 0;
     
-    button {
-        z-index: 1;
+            &::before {
+                font-size: 7px;
+            }
+        }
     }
 }
 
@@ -661,6 +698,17 @@ button {
 
     .header-menu__btn-toggle {
         display: block;
+    }
+
+    .worked-with {
+        padding-bottom: 85px;
+    }
+
+    .worked-with__slider {
+
+        .slick-dots {
+            top: 50px;
+        }
     }
 
     #portfolioModal .close {
@@ -761,6 +809,10 @@ button {
 
     .services__item-header {
         margin-top: 18px;
+    }
+
+    .worked-with {
+        padding-bottom: 95px;
     }
 }
 
