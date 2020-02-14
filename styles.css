@@ -884,6 +884,9 @@ button {
   .header-par {
     font-size: 12.7px;
   }
+  .industries {
+    overflow: hidden;
+  }
   .industries .row {
     flex-wrap: wrap;
   }
