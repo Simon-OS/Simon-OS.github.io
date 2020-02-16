@@ -29,6 +29,11 @@
 }
 
 
+@blue: #2355da;
+@section-grey: #f9fafd;
+@section-padding-top: 81px;
+@button-border-radius: 50px;
+
 
 a, button {
 
@@ -43,7 +48,7 @@ a, button {
 }
 
 body {
-    height: 10000px;            // !!!
+    height: 11939px;            // !!!
     font-family: "Montserrat", sans-serif;
 }
 
@@ -58,7 +63,7 @@ a {
 }
 
 .text-link {
-    color: #2355da;
+    color: @blue;
 
     &:hover {
         color: #3a3a3a;
@@ -94,7 +99,7 @@ button {
 // header-contacts
 
 .header-contacts {
-    background-color: #F9FAFD;
+    background-color: @section-grey;
 
     font-family: "Varela Round", sans-serif;
     font-size: 14px;
@@ -169,7 +174,7 @@ button {
     }
 
     &:hover {
-        color: #2355da;
+        color: @blue;
         transition: .1s linear;
     }
 }
@@ -186,8 +191,6 @@ button {
 
 .header-menu__button {
     display: inline-block;
-
-    border-radius: 50px;
     padding: 0.5px 20px;
 
     font-size: 13px;
@@ -212,11 +215,12 @@ button {
 }
 
 .button-blue-border {
-    color: #2355DA !important;
-    border: 2px solid #2355DA;
+    color: @blue !important;
+    border: 2px solid @blue;
+    border-radius: @button-border-radius;
 
     &:hover {
-        background: #2355DA;
+        background: @blue;
         color: white !important;
     }
 }
@@ -224,6 +228,7 @@ button {
 .button-green-border {
     color: #4DE55C !important;
     border: 2px solid #4DE55C;
+    border-radius: @button-border-radius;
 
     &:hover {
         background-color: #4DE55C;
@@ -290,7 +295,7 @@ button {
 
 .about-us {
     text-align: center;
-    background: #F9FAFD;
+    background: @section-grey;
 
     .container {
         padding: 60px 10px 60px 10px;
@@ -321,7 +326,7 @@ button {
 }
 
 .button-darkblue-bg {
-    border-radius: 50px;
+    border-radius: @button-border-radius;
 
     color: #FFFFFF;
     background-color: #3425F4;
@@ -343,7 +348,7 @@ button {
     background-image: url("img/blue_img-2.png");
 
     .container {
-        padding-top: 81px;
+        padding-top: @section-padding-top;
         padding-bottom: 69px;
 
         text-align: center;
@@ -372,7 +377,7 @@ button {
 .services {
 
     .container {
-        padding-top: 81px;
+        padding-top: @section-padding-top;
         padding-bottom: 75px;
     }
     
@@ -424,9 +429,9 @@ button {
 // worked-with
 
 .worked-with {
-    background-color: #f9fafd;
+    background-color: @section-grey;
 
-    padding-top: 81px;
+    padding-top: @section-padding-top;
     padding-bottom: 135px;
 }
 
@@ -588,7 +593,7 @@ button {
     color: #fff;
     background-color: #2185f5;
 
-    border-radius: 50px;
+    border-radius: @button-border-radius;
     border: 1px solid#2185f5;
     box-shadow: 0px 10px 30px -8px rgba(0,0,0,.16);
 
@@ -655,8 +660,10 @@ button {
 
 
 .process {
-    background-color: #f9fafd;
-    padding: 81px 0 94px;
+    background-color: @section-grey;
+
+    padding: @section-padding-top;
+    padding-bottom: 94px;
 
     .section-header {
         margin-bottom: 1.3rem;
@@ -747,7 +754,7 @@ button {
     }
 
     .container {
-        padding: 81px 45px 73px;
+        padding: @section-padding-top 45px 73px;
     }
 }
 
@@ -764,7 +771,7 @@ button {
 // clients
 
 .clients {
-    background-color: #2355da;
+    background-color: @blue;
 
     .section-header {
         color: #fff;
@@ -836,7 +843,7 @@ button {
     font-family: "Varela Round", sans-serif;
 
     .container {
-        padding-top: 81px;
+        padding-top: @section-padding-top;
         padding-bottom: 75px;
     }
     
@@ -857,6 +864,8 @@ button {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+
+    font-family: "Varela Round", sans-serif;
 }
 
 .features__header-par {
@@ -901,9 +910,9 @@ button {
 // technologies
 
 .technologies {
-    background-color: #f9fafd;
+    background-color: @section-grey;
 
-    padding-top: 81px;
+    padding-top: @section-padding-top;
     padding-bottom: 56px;
 }
 
@@ -947,7 +956,7 @@ button {
 .industries {
 
     .container {
-        padding: 81px 30px;
+        padding: @section-padding-top 30px 85px;
     }
 
     .row {
@@ -964,7 +973,6 @@ button {
 
 .industries__header-par {
     margin-bottom: 1.6rem;
-    font-family: "Varela Round", sans-serif;
 }
 
 .industries__item {
@@ -997,6 +1005,202 @@ button {
         background-color: #c3c6cd;
     }
 }
+
+
+// values
+
+.values {
+    padding-top: @section-padding-top;
+    padding-bottom: 62px;
+
+    background-color: @section-grey;
+
+    .section-header {
+        margin-bottom: 1.15rem;
+    }
+
+    .header-par {
+        font-size: 14px;
+    }
+
+    .row {
+        padding: 9px 25px;
+    }
+
+    &__item {
+        padding: 35px;
+        text-align: center;
+    }
+
+    &__item-img {
+        max-height: 75px;
+        margin-bottom: 14px;
+    }
+
+    &__item-header {
+        margin-bottom: 22px;
+
+        color: #000;
+        font-family: "Poppins Bold",Sans-serif;
+        font-size: 21px;
+    }
+
+    &__item-par {
+        font-family: "Varela Round", sans-serif;
+
+        color: #7a7a7a;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.857;
+    }
+}
+
+
+// team
+
+.team {
+    padding-top: @section-padding-top;
+    padding-bottom: 83px;
+
+    .row {
+        padding: 38px 15px 0;
+    }
+
+    &__item {
+        margin-bottom: 22px;
+
+        font-family: "Varela Round", sans-serif;
+        text-align: center;
+    }
+
+    &__item-img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    &__item-header {
+        margin-top: 18px;
+
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    &__item-par {
+        margin-top: 15px;
+
+        font-size: 14px;
+        color: #7a7a7a;
+    }
+}
+
+
+// form
+
+.form-section {
+    padding: 50px 0;
+    background: @blue;
+
+    &__form-container {
+        padding: 0 13px;
+    }
+
+    form {
+        padding: 47px 20px 76px;
+        background: @section-grey;
+    }
+
+    .section-header {
+        font-size: 30px;
+    }
+
+    .header-par {
+        margin-bottom: 3.2em;
+
+        font-weight: normal;
+        line-height: 1.858;
+    }
+
+    &__name,
+    &__email,
+    &__number,
+    &__skype,
+    &__budget,
+    &__message {
+        padding: 18px 20px;
+        margin: 10px 0px;
+
+        font-family: "Varela Round", sans-serif;
+        font-size: 14px;
+        color: #666;
+
+        border: 1px solid#eaeaea;
+        border-radius: 2px;
+        transition: all .2s linear;
+    }
+
+    &__name,
+    &__email,
+    &__number,
+    &__skype {
+        width: 48%;
+    }
+
+    &__email,
+    &__skype {
+        float: right;
+    }
+
+    &__budget,
+    &__message {
+        width: 100%;
+        display: block;
+    }
+
+    &__message {
+        height: 70px;
+        margin-top: 0px;
+    }
+
+    &__budget {
+        margin-top: 20px;
+    }
+
+    &__submit {
+        .button-blue-border;
+
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 11px 50px;
+
+        font-size: 16px;    
+        font-family: "Varela Round", sans-serif;
+        border: 1px solid @blue;
+    }
+}
+
+// links
+
+.links {
+    margin: 35px 0;
+
+    .row {
+        padding: 0 37px;
+    }
+
+    &__item {
+        font-size: 20px;
+        font-family: "Varela Round", sans-serif;
+
+        img {
+            max-width: 40px;
+            margin-right: 10.6px;
+        }
+    }
+}
+
+
+
 
 
 
@@ -1213,7 +1417,7 @@ button {
 
     .ranking {
         .container {
-            padding: 81px 30px 73px;
+            padding: @section-padding-top 30px 73px;
         }
     }
 
@@ -1278,6 +1482,62 @@ button {
             width: auto;
         }
     }
+
+    .values {
+
+        .section-header {
+            font-size: 25px;   
+        }
+
+        .header-par {
+            font-size: 12.7px;
+        }
+
+        &__item-img {
+            max-height: 140px;
+        }
+
+        &__item-par {
+            font-size: 12.8px;
+        }
+    }
+
+    .team {
+
+        &__item {
+            margin-bottom: 27px;
+        }
+
+        &__item-header {
+            font-size: 18.24px;
+        }
+
+        &__item-par {
+            font-size: 12.7px;
+        }
+    }
+
+    .form-section {
+        overflow: hidden;
+
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .section-header {
+            font-size: 20px;
+        }
+
+        input, 
+        textarea {
+            font-size: 13px
+        }
+    }
+
+    .links__item {
+        margin: 10px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1295,12 +1555,16 @@ button {
 
     .industries {
         .container {
-            padding: 81px 5px;
+            padding: @section-padding-top 5px;
         }
 
         .section-header {
             font-size: 1.5625em;
         }
+    }
+
+    .values__item-img {
+        max-height: 25vw;
     }
 }
 
