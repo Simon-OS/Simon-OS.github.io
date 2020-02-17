@@ -1099,8 +1099,11 @@ button {
 .form-section {
     padding: 50px 0;
     background: @blue;
+    overflow: hidden;
 
-    &__form-container {
+    font-family: "Varela Round", sans-serif;
+
+    &__form {
         padding: 0 13px;
     }
 
@@ -1129,7 +1132,6 @@ button {
         padding: 18px 20px;
         margin: 10px 0px;
 
-        font-family: "Varela Round", sans-serif;
         font-size: 14px;
         color: #666;
 
@@ -1174,8 +1176,100 @@ button {
         padding: 11px 50px;
 
         font-size: 16px;    
-        font-family: "Varela Round", sans-serif;
         border: 1px solid @blue;
+    }
+
+    //
+
+    &__contacts {
+        padding: 61px 0 0 30px;
+        
+        .section-header {
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        margin-top: 10px;
+        padding-left: 183px;
+
+        color: #fff;
+
+        img {
+            max-width: 89.77px;
+
+            position: absolute;
+            left: 43px;
+            top: -2px;
+        }
+
+        &-header {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 1.3rem;
+        }
+
+        &-address {
+            font-size: 14px;
+            line-height: 2.3em;
+            margin-bottom: 0;
+        }
+
+        a {
+            display: block;
+            margin: 11px 0;
+            font-size: 15px;
+
+            &:first-of-type {
+                margin-top: 5px;
+            }
+        }
+
+        .fa {
+            margin-right: 4px;
+        }
+    }
+
+    &__item:nth-of-type(2) {
+        margin-top: 58px;
+    }
+
+    .fa-phone {
+        position: relative;
+        top: 1px;
+
+        transform: rotate(271deg);
+        font-size: 19px;
+    }
+
+    &__buttons-row {
+        max-width: 88%;
+
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    &__button {
+        margin: 11px 6px;
+        padding: 17px 19.5px;
+
+        color: white;
+        font-size: 16px; 
+
+        border-radius: 50px;
+        background: transparent;
+        border: 2px solid white;
+
+        &:first-child i {
+            margin-left: 6px;
+        }
+
+        &:last-child i {
+            margin-right: 4px;
+        }
     }
 }
 
@@ -1280,6 +1374,28 @@ button {
 
     #portfolioModal .close {
         display: block;
+    }
+
+    .form-section__contacts {
+        padding: 61px 0 0 0;
+    }
+
+    .form-section__item {
+        padding-left: 135px;
+        margin-left: 0;
+        margin-top: 65px;
+
+        img {
+            left: 20px;
+        }
+
+        &:nth-of-type(2) {
+            margin-top: 75px;
+        }
+    }
+
+    .form-section__buttons-row {
+        max-width: 97%;
     }
 }
 
@@ -1533,6 +1649,14 @@ button {
         textarea {
             font-size: 13px
         }
+
+        .form-section__item {
+            max-width: 379px;
+
+            margin: 0 auto;
+            margin-top: 65px;
+            padding-left: 135px;
+        }
     }
 
     .links__item {
@@ -1565,6 +1689,27 @@ button {
 
     .values__item-img {
         max-height: 25vw;
+    }
+
+
+    .form-section {
+        padding: 50px 0 35px;
+
+        &__contacts {
+            padding: 61px 10px 0 0;
+        }
+
+        &__buttons-row {
+            max-width: 100%;
+        }
+
+        &__button {
+            padding: 13px 18.5px;
+        }
+
+        &__item {
+            margin-left: 10px;
+        }
     }
 }
 
