@@ -1294,6 +1294,114 @@ button {
 }
 
 
+// footer 
+
+.footer {
+    padding: 70px 0 12px;
+    background: @section-grey;
+
+    font-family: "Varela Round", sans-serif;
+
+    .logo-small {
+        max-width: 150px;
+    }
+    
+    &__links-column {
+        padding: 0px 17px
+    }
+
+    &__links-column:nth-of-type(2) {
+        padding-left: 20px;
+    }
+
+    &__contacts-column {
+        padding-left: 22.5px;
+
+        .footer__header {
+            margin-bottom: 37px;
+        }
+    }
+
+    &__par {
+        margin-top: 34px;
+        padding-right: 8px;
+
+        font-size: 12px;
+        line-height: 1.85714;
+        text-align: justify;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    &__header {
+        margin-bottom: 24px;
+        padding-top: 2px;
+        font-size: 20px;
+    }
+
+    &__links-list {
+        font-size: 12px;
+
+        li {
+            padding: 13.5px 0;
+        }
+
+        i {
+            margin-left: 4px;
+            margin-right: 10px;
+
+            vertical-align: middle;
+            font-size: 12.5px;
+            color: #2185f5;
+        }
+    }
+
+    .footer__address {
+        margin-top: 21px;
+
+        font-size: 12px;
+        line-height: 1.85714;
+
+        &-caption {
+            display: block;
+        }
+    }
+
+    &__contacts-list {
+        font-size: 12px;
+
+        li {
+            padding: 11px 0;
+        }
+
+        svg {
+            max-width: 13.5px;
+
+            margin-left: 2px;
+            margin-right: 14px;
+        } 
+        
+        i {            
+            margin-right: 16px;
+
+            font-size: 18px;
+            color: #2185f5;
+        }
+    }
+
+}
+
+.copyright {
+    padding: 23px 20px 26px;
+
+    line-height: 1.857;
+    text-align: center;
+
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+}
 
 
 
@@ -1661,6 +1769,22 @@ button {
 
     .links__item {
         margin: 10px;
+    }
+
+    .footer {
+        padding: 70px 0 0;
+
+        &__header {
+            font-size: 18.24px;
+        }
+
+        &__par {
+            margin-bottom: 35px;
+        }
+    }
+
+    .copyright {
+        font-size: 12.768px;
     }
 }
 
