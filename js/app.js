@@ -87,7 +87,10 @@ function headerMenuToggle() {
 
   if (headerMenu.classList.contains("active")) {
 
+    dropdown.classList.remove("active")
     headerMenu.classList.remove("active");
+    headerMenu.classList.remove("active-dropdown");
+
     headerBtn.innerHTML = `<i class="fa fa-bars"></i>`;
 
   } else {
@@ -113,7 +116,7 @@ let portfolioItems = document.querySelectorAll(".portfolio__item");
 let portfolioModalBody = document.querySelector("#portfolioModal .modal-body");
 
 function appendImgToModal(ev) {
-  
+
     let image = ev.target.cloneNode();
 
     portfolioModalBody.innerHTML = "";
