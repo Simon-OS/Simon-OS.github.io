@@ -73,6 +73,32 @@ $(document).ready(function() {
           }
       ]
   });
+
+  // counter
+
+  $('.counter .counter__projects').jQuerySimpleCounter({
+    end:    150,
+    easing:'swing',
+    duration: 700
+  });
+
+  $('.counter .counter__clients').jQuerySimpleCounter({
+    end:    140,
+    easing:'swing',
+    duration: 900
+  });
+
+  $('.counter .counter__lines').jQuerySimpleCounter({
+    end:    250,
+    easing:'swing',
+    duration: 1200
+  });
+
+  $('.counter .counter__awards').jQuerySimpleCounter({
+    end:    12,
+    easing:'swing',
+    duration: 1600
+  });
 });
 
 
@@ -84,6 +110,9 @@ let headerBtn = document.querySelector(".header-menu__btn-toggle");
 let headerMenu = document.querySelector(".header-menu");
 
 function headerMenuToggle() {
+  
+  if (window.outerWidth >= 1024)
+    return;
 
   if (headerMenu.classList.contains("active")) {
 
@@ -100,10 +129,13 @@ function headerMenuToggle() {
 
   }
 }
-
 headerBtn.addEventListener("click", headerMenuToggle);
 
 dropdown.addEventListener("click", () => {
+
+  if (window.outerWidth >= 1024)
+    return;
+
   dropdown.classList.toggle("active")
   headerMenu.classList.toggle("active-dropdown");
 });
