@@ -1,0 +1,435 @@
+@media (max-width: 1280px) {
+  .main-screen img {
+    max-width: 42vw;
+  }
+}
+@media (max-width: 1024px) {
+  .header-menu {
+    margin-bottom: 0;
+    border-bottom: none;
+    position: relative;
+  }
+  .header-menu__btn-toggle {
+    margin-left: calc(100vw - 261px);
+  }
+  .header-menu__btn-toggle .fa-times {
+    font-size: 18px;
+  }
+  .header-menu__nav-container {
+    display: none;
+    padding: 0;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 92px;
+  }
+  .header-menu__nav-list {
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+  }
+  .header-menu__list-item {
+    width: 100%;
+    display: inline-block;
+    padding: 10.5px 20px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .header-menu__list-item a {
+    padding-left: 0;
+  }
+  .header-menu__button-row {
+    width: 100%;
+    padding: 14px 20px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  .header-menu__btn-toggle {
+    display: block;
+  }
+  .header-menu .dropdown {
+    transition: none;
+    padding-bottom: 10.5px;
+  }
+  .header-menu .dropdown i {
+    position: relative;
+    bottom: -3px;
+    right: 12px;
+    float: right;
+    font-size: 0.9rem;
+  }
+  .header-menu.active {
+    margin-bottom: 300px;
+  }
+  .header-menu.active .header-menu__nav-container {
+    display: flex;
+  }
+  .header-menu .dropdown.active {
+    margin-bottom: 258px;
+  }
+  .header-menu.active-dropdown {
+    margin-bottom: 558px;
+  }
+  .header-menu .dropdown.active .fa-chevron-down {
+    transform: rotate(180deg);
+  }
+  .header-menu .dropdown.active .dropdown-menu {
+    visibility: visible;
+    display: block;
+  }
+  .header-menu .dropdown-menu {
+    width: 100%;
+    top: 41px !important;
+    display: none;
+    visibility: hidden;
+    background: #f9f9f9;
+    border: none;
+  }
+  .header-menu .dropdown-item {
+    padding: 10.4px 14px 10.6px;
+    padding-left: 28px;
+  }
+  .header-menu .dropdown-item .fa-chevron-right {
+    display: inline-block;
+    float: none;
+    bottom: 1px;
+    right: 6px;
+    font-size: 0.7rem;
+    font-weight: normal;
+  }
+  .worked-with {
+    padding-bottom: 85px;
+  }
+  .worked-with__slider .slick-dots {
+    top: 50px;
+  }
+  .process {
+    padding: 83px 0 75px;
+  }
+  .process__row-4 {
+    padding: 0;
+  }
+  .process__row-3 {
+    padding: 0px 60px;
+  }
+  .technologies__header {
+    font-size: 3.5em;
+  }
+  #portfolioModal .close {
+    display: block;
+  }
+  .form-section .container {
+    padding-left: 0;
+  }
+  .form-section__contacts {
+    padding: 61px 0 0 0;
+  }
+  .form-section__item {
+    padding-left: 135px;
+    margin-left: 0;
+    margin-top: 65px;
+  }
+  .form-section__item img {
+    left: 20px;
+  }
+  .form-section__item:nth-of-type(2) {
+    margin-top: 75px;
+  }
+  .form-section__buttons-row {
+    max-width: 97%;
+  }
+  .about-main {
+    padding-bottom: 50px;
+  }
+  .counter__item {
+    font-size: 56px;
+  }
+  .counter__caption {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .section-header {
+    font-size: 1.755em;
+  }
+  .header-contacts a {
+    font-size: 12px;
+    display: block;
+  }
+  .main-screen .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .main-screen br {
+    display: none;
+  }
+  .main-screen img {
+    max-width: 86vw;
+    margin: 0 auto;
+    padding: 55px 0px 55px 0px;
+  }
+  .main-screen__header {
+    text-align: center;
+    font-size: 25.9px;
+    position: relative;
+    bottom: 35px;
+  }
+  .main-screen__header strong {
+    font-size: 26px;
+  }
+  .help__header {
+    font-size: 1.8em;
+    margin-bottom: 0.6em;
+  }
+  .help p,
+  .about-us p {
+    font-size: 12px;
+  }
+  .help p {
+    padding: 0;
+    line-height: 1.95;
+  }
+  .services .section-header {
+    font-size: 30px;
+  }
+  .services__item {
+    flex-wrap: wrap;
+    padding: 13px 0px;
+  }
+  .services__item img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .services__item p {
+    font-size: 11.9px;
+  }
+  .services__item .wrapper {
+    text-align: center;
+    padding-left: 0;
+  }
+  .services__item-header {
+    margin-top: 18px;
+  }
+  .worked-with {
+    padding-bottom: 95px;
+  }
+  .process {
+    padding: 83px 0 75px;
+  }
+  .process .section-header {
+    font-size: 1.555em;
+    margin-bottom: 0.7rem;
+  }
+  .process__item {
+    padding: 10px 15px;
+    margin-bottom: 4px;
+  }
+  .process__item img {
+    max-width: 80px;
+  }
+  .process__item p {
+    font-size: 12.8px;
+  }
+  .process__item-number {
+    font-size: 1.25rem;
+  }
+  .process__row-3 {
+    padding: 0;
+    margin-top: 0;
+  }
+  .ranking .container {
+    padding: 81px 30px 73px;
+  }
+  .clients .container {
+    padding: 46px 15px;
+  }
+  .features .container {
+    padding-top: 83px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .features__item {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .features__item .wrapper {
+    width: auto;
+    padding-left: 0;
+  }
+  .features__item img {
+    margin: 0 auto;
+  }
+  .features__item p {
+    font-size: 12.7px;
+    line-height: 1.85em;
+  }
+  .features__item-header {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  .features__header {
+    font-size: 25px;
+  }
+  .header-par {
+    font-size: 12.7px;
+  }
+  .industries {
+    overflow: hidden;
+  }
+  .industries .row {
+    flex-wrap: wrap;
+  }
+  .industries__item {
+    width: 100%;
+    height: 235px;
+  }
+  .industries__item img {
+    width: auto;
+  }
+  .values .section-header {
+    font-size: 25px;
+  }
+  .values .header-par {
+    font-size: 12.7px;
+  }
+  .values__item-img {
+    max-height: 140px;
+  }
+  .values__item-par {
+    font-size: 12.8px;
+  }
+  .team__item {
+    margin-bottom: 27px;
+  }
+  .team__item-header {
+    font-size: 18.24px;
+  }
+  .team__item-par {
+    font-size: 12.7px;
+  }
+  .form-section {
+    overflow: hidden;
+  }
+  .form-section .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form-section .section-header {
+    font-size: 20px;
+  }
+  .form-section input,
+  .form-section textarea {
+    font-size: 13px;
+  }
+  .form-section .form-section__item {
+    max-width: 379px;
+    margin: 0 auto;
+    margin-top: 65px;
+    padding-left: 135px;
+  }
+  .links__item {
+    margin: 10px;
+  }
+  .footer {
+    padding: 70px 0 0;
+  }
+  .footer__header {
+    font-size: 18.24px;
+  }
+  .footer__par {
+    margin-bottom: 35px;
+  }
+  .copyright {
+    font-size: 12.768px;
+  }
+  .about-main {
+    padding-bottom: 48px;
+  }
+  .about-main .row {
+    flex-direction: column-reverse;
+  }
+  .about-main__img {
+    max-width: 91%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .about-main__par {
+    font-size: 12.768px;
+  }
+  .about-main__par:first-of-type {
+    margin-bottom: 20px;
+  }
+  .about-main__btn {
+    margin-top: 3px;
+  }
+  .about-main__btn svg {
+    margin-bottom: 2px;
+  }
+  .main-type-1__btn {
+    margin-bottom: 2px;
+  }
+  .counter {
+    padding: 57px 0 49px;
+  }
+  .counter .section-header {
+    margin-bottom: 59px;
+  }
+  .counter__item {
+    padding: 15.5px 0;
+    border-style: none;
+    font-size: 51.072px;
+  }
+  .counter__caption {
+    position: relative;
+    bottom: 6px;
+    font-size: 12.768px;
+  }
+}
+@media (max-width: 575px) {
+  .portfolio__row {
+    margin: 0;
+  }
+  .portfolio__item {
+    margin: 1px 0;
+  }
+  .portfolio .container {
+    padding: 95px 0 80px;
+  }
+  .industries .container {
+    padding: 81px 5px;
+  }
+  .industries .section-header {
+    font-size: 1.5625em;
+  }
+  .values__item-img {
+    max-height: 25vw;
+  }
+  .form-section {
+    padding: 50px 0 35px;
+  }
+  .form-section__contacts {
+    padding: 61px 10px 0 0;
+  }
+  .form-section__buttons-row {
+    max-width: 100%;
+  }
+  .form-section__button {
+    padding: 13px 18.5px;
+  }
+  .form-section__item {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .portfolio .button-blue-bg {
+    width: 89vw;
+    font-size: 84%;
+  }
+  .portfolio .button-blue-bg svg {
+    position: relative;
+    bottom: 1px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+  }
+}
