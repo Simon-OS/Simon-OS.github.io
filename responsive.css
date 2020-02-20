@@ -2,6 +2,12 @@
   .main-screen img {
     max-width: 42vw;
   }
+  .form-section--text .container {
+    padding: 0 12px;
+  }
+  .form-section--text form {
+    margin: 0 12px;
+  }
 }
 @media (max-width: 1024px) {
   .header-menu {
@@ -144,6 +150,38 @@
     font-size: 56px;
   }
   .counter__caption {
+    font-size: 14px;
+  }
+  .history {
+    padding: 75px 0 80px;
+  }
+  .history .section-header {
+    margin-bottom: 20px;
+  }
+  .history__par {
+    padding: 0 30px;
+  }
+  .about .row {
+    padding: 0;
+  }
+  .about__item {
+    padding: 33px 22px 47px;
+    text-align: center;
+    border: none;
+  }
+  .about__item-header {
+    font-size: 25.5px;
+  }
+  .d-process .row {
+    padding: 0 5px;
+  }
+  .choose .container {
+    padding: 0;
+  }
+  .choose .section-header {
+    margin-bottom: 5px;
+  }
+  .choose__accordion-header {
     font-size: 14px;
   }
 }
@@ -342,6 +380,9 @@
   .copyright {
     font-size: 12.768px;
   }
+  .about-page .section-header {
+    font-size: 28.9px;
+  }
   .about-main {
     padding-bottom: 48px;
   }
@@ -384,6 +425,65 @@
     position: relative;
     bottom: 6px;
     font-size: 12.768px;
+  }
+  .history .container {
+    padding: 0 11px;
+  }
+  .history__par {
+    padding: 0;
+  }
+  .d-process {
+    padding: 83px 0;
+  }
+  .d-process .section-header {
+    font-size: 25px;
+  }
+  .d-process .row:last-of-type {
+    margin-top: 55px;
+  }
+  .d-process__item {
+    margin-top: 55px;
+  }
+  .d-process__item:first-child {
+    margin: 0;
+  }
+  .d-process__digit {
+    top: -35px;
+    left: -3px;
+    font-size: 89.3px;
+  }
+  .d-process__header {
+    font-size: 31.92px;
+  }
+  .d-process__par {
+    font-size: 12.768px;
+  }
+  .choose__text-col {
+    padding: 0 25px 0 25px;
+  }
+  .choose__img-col {
+    margin-top: 10px;
+  }
+  .choose__accordion-header {
+    font-size: 12.768px;
+  }
+  .choose__accordion-par {
+    font-size: 11.5px;
+  }
+  .choose__img {
+    max-width: 82.2%;
+    display: block;
+    margin: 0 auto;
+  }
+  .form-section--text .section-header {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .form-section__text-col {
+    padding: 60px 0 62px;
+  }
+  .form-section__text-par {
+    padding: 0;
   }
 }
 @media (max-width: 575px) {
