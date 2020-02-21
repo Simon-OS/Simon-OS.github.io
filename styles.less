@@ -1356,6 +1356,7 @@ button {
     &__button {
         margin: 11px 6px;
         padding: 17px 19.5px;
+        display: inline-block;
 
         color: white;
         font-size: 16px; 
@@ -1370,6 +1371,10 @@ button {
 
         &:last-child i {
             margin-right: 4px;
+        }
+
+        &:hover {
+            color: white;
         }
     }
 }
@@ -1518,16 +1523,16 @@ button {
 
 // about-main
 
-.about-main {
-    padding-bottom: 30px;
-    font-family: "Poppins Bold", sans-serif;
+// main-1 template
 
-    &__header {
+#main-type-1() {
+
+    .header {
         font-size: 27px;
         margin-bottom: 0;
     }
 
-    &__caption {
+    .caption {
         position: relative;
         bottom: 1px;
 
@@ -1536,7 +1541,7 @@ button {
         font-size: 20px;
     }
     
-    &__par {
+    .par {
         margin: 17px 0;
 
         color: @grey;
@@ -1545,64 +1550,92 @@ button {
         font-size: 14px;
         font-family: "Montserrat", sans-serif;
 
-        a {
-            font-weight: bold;
-        }
-
         &:first-of-type {
             margin-bottom: 22px;
         }
     }
 
-    &__img-col {
+    .img-col {
         padding-top: 30px;
         padding-left: 30px;
     }
 
-    &__text-col {
+    .text-col {
         padding: 72px 15px 0 15px;
     }
 
-    &__btn {
-        margin-top: 76px;
-    }
-
-    &__img {
+    .img {
         max-width: 95.2%;
     }
-}
 
-.main-type-1__btn {
-    padding: 6px 40px 7px;
+    .btn {
+        padding: 6px 40px 7px;
 
-    background-color: #fff;
-    border-radius: 50px;
+        background-color: #fff;
+        border-radius: 50px;
 
-    color: #4054b2;
-    font-family: "Montserrat",Sans-serif;
+        color: #4054b2;
+        font-family: "Montserrat",Sans-serif;
 
-    border: 1px solid#4054b2;
-    box-shadow: 0px 10px 30px -8px rgba(0,0,0,.16);
-
-    svg {
-        width: 13.7px;
-        margin-left: 15px;
-        margin-bottom: 1px;
-
-        fill: #4054b2;
-    }
-
-    &:hover {
-        color: #fff;
-        background-color: #4054b2;
-        border-color: #4054b2;
+        border: 1px solid#4054b2;
+        box-shadow: 0px 10px 30px -8px rgba(0,0,0,.16);
 
         svg {
-            fill: #fff;
-            transition: all .3s;
+            width: 13.7px;
+            margin-left: 15px;
+            margin-bottom: 1px;
+
+            fill: #4054b2;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #4054b2;
+            border-color: #4054b2;
+
+            svg {
+                fill: #fff;
+                transition: all .3s;
+            }
         }
     }
 }
+
+.about-main {
+    padding-bottom: 30px;
+    font-family: "Poppins Bold", sans-serif;
+
+    &__header {
+        #main-type-1.header();
+    }
+
+    &__caption {
+        #main-type-1.caption();
+    }
+    
+    &__par {
+        #main-type-1.par();
+    }
+    
+    &__img-col {
+        #main-type-1.img-col();
+    }
+
+    &__text-col {
+        #main-type-1.text-col();
+    }
+
+    &__img {
+        #main-type-1.img();
+    }
+
+    &__btn {
+        #main-type-1.btn();
+        margin-top: 76px;
+    }
+}
+
+
 
 
 // counter
@@ -1862,10 +1895,6 @@ button {
 
 // form-section
 
-.form-section--text {
-    
-}
-
 .form-section__text-col {
     padding: 155px 0 0 25px;
     color: #fff;
@@ -1884,4 +1913,138 @@ button {
     padding: 0px 58px;
     font-size: 18px;
     text-align: center;
+}
+
+
+
+/// Portfolio page
+
+
+// portfolio-main
+
+.portfolio-main {
+    padding: 20px 0 50px;
+    font-family: "Poppins Bold", sans-serif;
+
+    &__header {
+        #main-type-1.header();
+    }
+
+    &__caption {
+        #main-type-1.caption();
+    }
+    
+    &__par {
+        #main-type-1.par();
+
+        &:first-of-type {
+            margin-top: 11px;
+        }
+    }
+    
+    &__img-col {
+        #main-type-1.img-col();
+    }
+
+    &__text-col {
+        #main-type-1.text-col();
+        padding: 116px 15px 0 25px;
+    }
+
+    &__img {
+        #main-type-1.img();
+    }
+
+    &__btn {
+        #main-type-1.btn();
+        margin-top: 76px;
+    }
+}
+
+
+// portfolio
+
+.portfolio-page .portfolio {
+    background-color: #f9fafd;
+
+    .section-header {
+        margin-bottom: 11px;
+    }
+
+    .container {
+        padding: 41px 0 120px;
+    }
+}
+
+.portfolio__header-par {
+    margin-bottom: 40px;
+
+    color: #686868;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+// worked-with 
+
+.portfolio-page .worked-with {
+    background: #fff;
+}
+
+
+
+/// Contact page
+
+
+// contact-main
+
+.contact-main {
+    padding-bottom: 30px;
+    font-family: "Poppins Bold", sans-serif;
+
+    .container {
+        padding-right: 15px;
+    }
+
+    &__header {
+        #main-type-1.header();
+        font-size: 30px;
+    }
+
+    &__caption {
+        #main-type-1.caption();
+    }
+    
+    &__par {
+        #main-type-1.par();
+    }
+    
+    &__img-col {
+        #main-type-1.img-col();
+        
+        max-width: 45%;
+        flex: 0 0 45%;
+
+        padding-right: 0;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+    &__text-col {
+        #main-type-1.text-col();
+
+        max-width: 55%;
+        flex: 0 0 55%;
+
+        padding: 68px 0px 0 15px;
+    }
+
+    &__img {
+        #main-type-1.img();
+    }
+
+    &__btn {
+        #main-type-1.btn();
+        margin-top: 76px;
+    }
 }

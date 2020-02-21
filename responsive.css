@@ -403,11 +403,9 @@
   }
   .about-main__btn {
     margin-top: 3px;
-  }
-  .about-main__btn svg {
     margin-bottom: 2px;
   }
-  .main-type-1__btn {
+  .about-main__btn svg {
     margin-bottom: 2px;
   }
   .counter {
@@ -484,6 +482,69 @@
   }
   .form-section__text-par {
     padding: 0;
+  }
+  .portfolio-main {
+    padding-bottom: 48px;
+  }
+  .portfolio-main .row {
+    flex-direction: column-reverse;
+  }
+  .portfolio-main__img {
+    max-width: 91%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .portfolio-main__par {
+    font-size: 12.768px;
+  }
+  .portfolio-main__par:first-of-type {
+    margin-bottom: 20px;
+  }
+  .portfolio-main__btn {
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+  .portfolio-main__btn svg {
+    margin-bottom: 2px;
+  }
+  .contact-main {
+    padding-bottom: 98px;
+  }
+  .contact-main .container {
+    padding-right: 20px;
+  }
+  .contact-main .row {
+    flex-direction: column-reverse;
+  }
+  .contact-main__img-col,
+  .contact-main__text-col {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .contact-main__text-col {
+    padding: 35px 10px 0 10px;
+    text-align: center;
+  }
+  .contact-main__img {
+    max-width: 91%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    max-width: 50%;
+  }
+  .contact-main__par {
+    font-size: 12.768px;
+  }
+  .contact-main__par:first-of-type {
+    margin-bottom: 20px;
+  }
+  .contact-main__btn {
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+  .contact-main__btn svg {
+    margin-bottom: 2px;
   }
 }
 @media (max-width: 575px) {

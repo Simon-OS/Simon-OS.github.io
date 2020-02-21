@@ -578,7 +578,7 @@
     }
 
 
-    /// About
+    /// About page
 
 
     .about-page {
@@ -589,6 +589,38 @@
     }
 
 
+    // main-1 template
+
+    #main-type-1() {
+
+        .img {
+            max-width: 91%;
+            margin: 0 auto;
+            display: block;
+    
+            text-align: center;
+        }
+
+        .par {
+            font-size: 12.768px;
+
+            &:first-of-type {
+                margin-bottom: 20px;
+            }
+        }
+
+        .btn {
+            margin-top: 3px;
+            margin-bottom: 2px;
+
+            svg {
+                margin-bottom: 2px
+            }
+        }
+    }
+
+    //
+
     .about-main {
         padding-bottom: 48px;
 
@@ -597,33 +629,16 @@
         }
 
         &__img {
-            max-width: 91%;
-            margin: 0 auto;
-            display: block;
-    
-            text-align: center;
+            #main-type-1.img();
         }
 
         &__par {
-            font-size: 12.768px;
-        }
-
-        &__par:first-of-type {
-            margin-bottom: 20px;
+            #main-type-1.par();
         }
 
         &__btn {
-            margin-top: 3px;
-
-            svg {
-                margin-bottom: 2px
-            }
+            #main-type-1.btn();
         }
-
-    }
-
-    .main-type-1__btn {
-        margin-bottom: 2px;
     }
 
 
@@ -746,6 +761,68 @@
 
     .form-section__text-par {
         padding: 0;
+    }
+
+
+    /// Portfolio page
+
+    .portfolio-main {
+        padding-bottom: 48px;
+
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        &__img {
+            #main-type-1.img();
+        }
+
+        &__par {
+            #main-type-1.par();
+        }
+
+        &__btn {
+            #main-type-1.btn();
+        }
+    }
+
+
+    /// Contact page
+
+    .contact-main {
+        padding-bottom: 98px;
+
+        .container {
+            padding-right: 20px;
+        }
+
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        &__img-col,
+        &__text-col {
+            max-width: 100%;
+            flex: 100%;
+        }
+
+        &__text-col {
+            padding: 35px 10px 0 10px;
+            text-align: center;
+        }
+
+        &__img {
+            #main-type-1.img();
+            max-width: 50%;
+        }
+
+        &__par {
+            #main-type-1.par();
+        }
+
+        &__btn {
+            #main-type-1.btn();
+        }
     }
 }
 
