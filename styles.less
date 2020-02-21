@@ -181,6 +181,14 @@ button {
     
         a {
             padding: 0.8em 1.005em;
+
+            &.active {
+                color: @blue;
+            }
+
+            &:focus {
+                color: inherit;
+            }
         }
     
         &:hover {

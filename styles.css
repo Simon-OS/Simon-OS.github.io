@@ -125,6 +125,12 @@ button {
 .header-menu__list-item a {
   padding: 0.8em 1.005em;
 }
+.header-menu__list-item a.active {
+  color: #2355da;
+}
+.header-menu__list-item a:focus {
+  color: inherit;
+}
 .header-menu__list-item:hover {
   color: #2355da;
   transition: 0.1s linear;

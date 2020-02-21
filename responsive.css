@@ -23,6 +23,7 @@
   }
   .header-menu__nav-container {
     display: none;
+    z-index: 1;
     padding: 0;
     justify-content: flex-start;
     position: absolute;
@@ -66,11 +67,15 @@
   .header-menu.active {
     margin-bottom: 300px;
   }
+  .header-menu.active .header-menu__list-item:hover {
+    color: inherit;
+  }
   .header-menu.active .header-menu__nav-container {
     display: flex;
   }
   .header-menu .dropdown.active {
     margin-bottom: 258px;
+    color: inherit;
   }
   .header-menu.active-dropdown {
     margin-bottom: 558px;
