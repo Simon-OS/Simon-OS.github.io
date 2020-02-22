@@ -82,6 +82,10 @@ button {
     border: none;
 }
 
+section {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1340px;
 
@@ -248,6 +252,11 @@ button {
 
         .fa-chevron-right {
             display: none;
+        }
+
+        &.active, 
+        &:active {
+            background: transparent;
         }
     }
 
@@ -2283,4 +2292,253 @@ button {
 
     background: #fff;
     font-weight: bold;
+}
+
+
+
+/// Services page
+
+
+// main
+
+.services-main {
+    padding: 20px 0 80px;
+
+    &__header {
+        #main-type-1.header();
+        font-family: "Poppins Bold", sans-serif;
+        margin-bottom: 18px;
+    }
+
+    &__caption {
+        font-size: 18px;
+        color: #3a3a3a;
+    }
+
+    &__img-col {
+        #main-type-1.img-col();
+    }
+
+    &__text-col {
+        padding: 88px 10px 0 25px;
+    }
+
+    &__par {
+        margin-top: 20px;
+        line-height: 1.8em;
+
+        color: @grey;
+        font-size: 17px;
+    }
+
+    &__img {
+        #main-type-1.img();
+    }
+
+    &__btn {
+        padding: 15px 40px;
+        margin-top: 27px;
+
+        color: #0274be;
+        font-size: 14.8px;
+
+        line-height: 1em;
+        letter-spacing: 1px;
+
+        border: 3px solid #0274be;
+        border-radius: 50px;
+
+        font-weight: bold;
+        font-family: "Poppins Light", sans-serif;
+
+        i {
+            margin-left: 18px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #0274be;
+        }
+    }
+
+}
+
+
+// glimpse
+
+.services-page {
+    .section-header {
+        letter-spacing: 2.3px;
+    }
+}
+
+.services-glimpse {
+    padding: 67px 0 60px;
+    text-align: center;
+
+    background-color: #315fda;
+    color: #fff;
+
+    .container {
+        padding: 0 27px;
+    }
+
+    .section-header {
+        margin-bottom: 41px;
+        color: inherit;
+    }
+
+    &__par {
+        line-height: 1.8em;
+
+        &:first-of-type {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__btn {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+}
+
+.services-btn {
+    padding: 12px 30px;
+    margin-top: 44px;
+    
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 12.6px;
+
+    border-radius: 50px;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    &:hover {
+        color: #fff;
+        background-color: #4064d7;
+        border-color: #4064d7;
+    }
+}
+    
+
+// app
+
+.app {
+    padding: 56px 0 60px;
+    text-align: center;
+
+    .container {
+        padding: 0 80px;
+    }
+
+    .row {
+        margin-top: 134px;
+        justify-content: space-between;
+    }
+
+    .section-header {
+        margin-bottom: 6px;
+    }
+
+    &__header-par {
+        color: #545454;
+        font-size: 14px;
+
+        line-height: 1.858;
+    }
+
+    &__item {
+        max-width: 47%;
+        flex: 0 0 47%;
+
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    &__item-img {
+        max-width: 100%;
+    }
+
+    &__item-header {
+        margin-top: 17px;
+        font-size: 25px;
+    }
+
+    &__item-caption {
+        margin-top: 27px;
+
+        font-size: 16px;
+        color: #bfbfbf;
+    }
+
+    &__btn {
+        margin-top: 54px;
+
+        color: #4064d7;
+        border: 2px solid #4064d7;
+    }
+}
+
+
+// services includes
+
+.includes {
+    padding: 76px 0;
+    background: #f4f4f7;
+
+    .section-header {
+        margin-bottom: 0px;
+    }
+
+    .row {
+        padding: 40px 15px;
+        justify-content: space-between;
+
+        &:last-of-type {
+            padding-top: 60px;
+        }
+    }
+
+    &__item {
+        height: max-content;
+        padding: 0 30px;
+    }
+
+    &__item-img {
+        max-width: 77px;
+    }
+
+    &__item-header {
+        margin-top: 18px;
+        margin-bottom: 23px;
+
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &__item-par {
+        color: @grey;
+        font-size: 14px;
+        line-height: 1.858;
+    }
+
+    .wrap {
+        background-color: #fff;
+
+        padding: 20px 20px 30px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+    }
+
+    &__item--2 .wrap {
+        padding: 20px 20px 4px;
+    }
+
+    &__item--3 .wrap {
+        padding: 20px 20px 55px;
+    }
 }

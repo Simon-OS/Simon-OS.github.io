@@ -192,6 +192,24 @@
   .articles__item {
     margin: 0 1%;
   }
+  .app .container {
+    padding: 0 15px;
+  }
+  .app .row {
+    margin-top: 89px;
+  }
+  .app__header-par {
+    padding: 0px 45px;
+  }
+  .app__item {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .app__btn {
+    margin-top: 29px;
+  }
 }
 @media (max-width: 767px) {
   .section-header {
@@ -398,7 +416,7 @@
     flex-direction: column-reverse;
   }
   .about-main__img {
-    max-width: 91%;
+    max-width: 70%;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -498,7 +516,7 @@
     flex-direction: column-reverse;
   }
   .portfolio-main__img {
-    max-width: 91%;
+    max-width: 70%;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -535,7 +553,7 @@
     text-align: center;
   }
   .contact-main__img {
-    max-width: 91%;
+    max-width: 70%;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -561,7 +579,6 @@
     flex-direction: column-reverse;
   }
   .blog-main__img {
-    max-width: 91%;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -590,6 +607,71 @@
   }
   .articles__item {
     margin: 50px auto;
+  }
+  .services-main {
+    text-align: center;
+  }
+  .services-main .row {
+    flex-direction: column-reverse;
+  }
+  .services-main__img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .services-main__par {
+    font-size: 12.768px;
+  }
+  .services-main__par:first-of-type {
+    margin-bottom: 20px;
+  }
+  .services-main__text-col {
+    padding: 88px 10px 0px 10px;
+  }
+  .services-main__btn {
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+  .services-main__btn svg {
+    margin-bottom: 2px;
+  }
+  .app .container {
+    padding: 0;
+  }
+  .app__header-par {
+    padding: 0 15px;
+    font-size: 12.768px;
+  }
+  .app__item {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .app__item:last-of-type {
+    margin-top: 21px;
+  }
+  .includes {
+    padding: 77px 0 20px;
+  }
+  .includes .row,
+  .includes .row:last-of-type {
+    padding: 0 15px;
+  }
+  .includes .section-header {
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+  .includes__item {
+    padding: 35px 10px;
+  }
+  .includes__item-img {
+    max-width: 14%;
+  }
+  .includes__item-header {
+    font-size: 20px;
+  }
+  .includes__item-par {
+    font-size: 12.768px;
   }
 }
 @media (max-width: 575px) {
@@ -642,6 +724,9 @@
   }
   .articles__item {
     margin: 8px auto;
+  }
+  .services-glimpse .container {
+    padding: 0 10px;
   }
 }
 @media (max-width: 375px) {

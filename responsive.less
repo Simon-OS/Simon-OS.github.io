@@ -308,6 +308,36 @@
     .articles__item {
         margin: 0 1%;
     }
+
+
+    /// Services
+
+    // app
+
+    .app {
+        .container {
+            padding: 0 15px;
+        }
+
+        .row {
+            margin-top: 89px;
+        }
+
+        &__header-par {
+            padding: 0px 45px;
+        }
+
+        &__item {
+            max-width: 50%;
+            flex: 0 0 50%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        &__btn {
+            margin-top: 29px;
+        }
+    }
 }
 
 
@@ -608,7 +638,7 @@
     #main-type-1() {
 
         .img {
-            max-width: 91%;
+            max-width: 70%;
             margin: 0 auto;
             display: block;
     
@@ -879,6 +909,92 @@
     .articles__item {
         margin: 50px auto;
     }
+
+
+    /// Services
+
+    .services-main {
+        text-align: center;
+
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        &__img {
+            #main-type-1.img();
+        }
+
+        &__par {
+            #main-type-1.par();
+        }
+
+        &__text-col {
+            padding: 88px 10px 0px 10px;
+        }
+
+        &__btn {
+            #main-type-1.btn();
+        }
+    }
+
+
+    /// Services
+
+    // app
+
+    .app {
+
+        .container {
+            padding: 0;
+        }
+
+        &__header-par {
+            padding: 0 15px;
+            font-size: 12.768px;
+        }
+
+        &__item {
+            max-width: 100%;
+            flex: 0 0 100%;
+
+            &:last-of-type {
+                margin-top: 21px;
+            }
+        }
+    }
+
+    
+    // includes
+
+    .includes {
+        padding: 77px 0 20px;
+
+        .row,
+        .row:last-of-type {
+            padding: 0 15px;
+        }
+
+        .section-header {
+            margin-bottom: 0;
+            padding: 0 10px;
+        }
+
+        &__item {
+            padding: 35px 10px;
+        }
+
+        &__item-img {
+            max-width: 14%;
+        }
+
+        &__item-header {
+            font-size: 20px;
+        }
+
+        &__item-par {
+            font-size: 12.768px;
+        }
+    }
 }
 
 
@@ -952,6 +1068,11 @@
 
     .articles__item {
         margin: 8px auto;
+    }
+
+
+    .services-glimpse .container {
+        padding: 0 10px;
     }
 }
 
