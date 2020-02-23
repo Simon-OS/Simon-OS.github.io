@@ -673,6 +673,34 @@
   .includes__item-par {
     font-size: 12.768px;
   }
+  .faq {
+    padding: 40px 0 45px;
+  }
+  .faq .container {
+    padding: 0px 20px;
+  }
+  .faq__accordion-header {
+    font-size: 13px;
+    text-align: left;
+  }
+  .faq .card-body {
+    font-size: 12.768px;
+  }
+  .services-marketing-page .section-header,
+  .services-uiux-page .section-header {
+    padding: 0 10px;
+  }
+  .services-marketing-page .app__item-img,
+  .services-uiux-page .app__item-img {
+    max-width: 90%;
+  }
+  .services-marketing-page .app__btn,
+  .services-uiux-page .app__btn {
+    margin-top: 50px;
+  }
+  .services-uiux-page .app__header-caption {
+    font-size: 28px;
+  }
 }
 @media (max-width: 575px) {
   .portfolio__row {
@@ -727,6 +755,10 @@
   }
   .services-glimpse .container {
     padding: 0 10px;
+  }
+  .services-web-page .app__btn,
+  .services-unity-page .app__btn {
+    margin-top: 50px;
   }
 }
 @media (max-width: 375px) {

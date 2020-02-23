@@ -34,7 +34,6 @@
 }
 
 
-
 @blue: #2355da;
 @grey: #7a7a7a;
 @section-grey: #f9fafd;
@@ -2488,7 +2487,7 @@ section {
 // services includes
 
 .includes {
-    padding: 76px 0;
+    padding: 76px 0 60px;
     background: #f4f4f7;
 
     .section-header {
@@ -2542,3 +2541,148 @@ section {
         padding: 20px 20px 55px;
     }
 }
+
+
+// faq
+
+.faq {
+    padding: 86px 0 90px;
+
+    .section-header {
+        margin-bottom: 16px;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .card {
+        border: none;
+        font-size: 21px;
+    }
+
+    .card-header {
+        padding: 11px 2px;
+
+        background: transparent; 
+        border-bottom: 2px solid #eee;
+    }
+
+    .card-body {
+        padding: 12px 15px 22px;
+
+        color:#7a7a7a;
+        font-size: 14px;
+
+        line-height: 1.858;
+        border-bottom: 2px solid #eee;
+    }
+
+
+    .collapsing {
+        border-bottom: 2px solid #eee;
+    }
+
+    .collapsing {
+        transition: all .3s ease;
+    }
+
+    &__accordion-digit {
+        font-size: inherit;
+        color: blue;
+    }
+
+    &__accordion-header {
+        font-size: inherit;
+        
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+// form section
+
+.services-page .form-section__text-par {
+    line-height: 1.858;
+    letter-spacing: normal;
+
+    font-family: "Varela Round", sans-serif;
+    font-size: 24px;
+}
+
+
+// Services Pages
+
+
+.services-android-page,
+.services-unity-page {
+
+    .includes .wrap {
+        padding: 20px;
+    }
+}
+
+
+.services-web-page,
+.services-unity-page,
+.services-marketing-page,
+.services-uiux-page {
+
+    .app__btn {
+        margin-top: 80px;
+    }
+}
+
+
+.services-marketing-page,
+.services-uiux-page {
+    
+    .app .row {
+        margin-top: 56px;
+    }
+
+    .app__item:last-of-type {
+        align-self: center;
+    }
+
+    .app__header-par {
+        text-align: left;
+    }
+}
+
+
+.services-uiux-page {
+
+    .services-main__header {
+        margin-bottom: 17px;
+    }
+
+    .services-main__par {
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .app__header-caption {
+        font-family: "Poppins Light", sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+
+        letter-spacing: 2.3px;
+        color: #6e626f;
+    }
+
+    .includes__item--1 .wrap {
+        padding: 20px 20px 10px;
+    }
+
+    .includes__item--2 .wrap {
+        padding: 20px 20px 32px;
+    }
+
+    .includes__item--4 .wrap {
+        padding: 20px 20px 44px;
+    }
+}
+
+

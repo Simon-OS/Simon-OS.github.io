@@ -1820,7 +1820,7 @@ section {
   border: 2px solid #4064d7;
 }
 .includes {
-  padding: 76px 0;
+  padding: 76px 0 60px;
   background: #f4f4f7;
 }
 .includes .section-header {
@@ -1861,4 +1861,96 @@ section {
 }
 .includes__item--3 .wrap {
   padding: 20px 20px 55px;
+}
+.faq {
+  padding: 86px 0 90px;
+}
+.faq .section-header {
+  margin-bottom: 16px;
+}
+.faq .container {
+  padding: 0 40px;
+}
+.faq .card {
+  border: none;
+  font-size: 21px;
+}
+.faq .card-header {
+  padding: 11px 2px;
+  background: transparent;
+  border-bottom: 2px solid #eee;
+}
+.faq .card-body {
+  padding: 12px 15px 22px;
+  color: #7a7a7a;
+  font-size: 14px;
+  line-height: 1.858;
+  border-bottom: 2px solid #eee;
+}
+.faq .collapsing {
+  border-bottom: 2px solid #eee;
+}
+.faq .collapsing {
+  transition: all 0.3s ease;
+}
+.faq__accordion-digit {
+  font-size: inherit;
+  color: blue;
+}
+.faq__accordion-header {
+  font-size: inherit;
+}
+.faq__accordion-header:focus {
+  box-shadow: none !important;
+}
+.services-page .form-section__text-par {
+  line-height: 1.858;
+  letter-spacing: normal;
+  font-family: "Varela Round", sans-serif;
+  font-size: 24px;
+}
+.services-android-page .includes .wrap,
+.services-unity-page .includes .wrap {
+  padding: 20px;
+}
+.services-web-page .app__btn,
+.services-unity-page .app__btn,
+.services-marketing-page .app__btn,
+.services-uiux-page .app__btn {
+  margin-top: 80px;
+}
+.services-marketing-page .app .row,
+.services-uiux-page .app .row {
+  margin-top: 56px;
+}
+.services-marketing-page .app__item:last-of-type,
+.services-uiux-page .app__item:last-of-type {
+  align-self: center;
+}
+.services-marketing-page .app__header-par,
+.services-uiux-page .app__header-par {
+  text-align: left;
+}
+.services-uiux-page .services-main__header {
+  margin-bottom: 17px;
+}
+.services-uiux-page .services-main__par {
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.services-uiux-page .app__header-caption {
+  font-family: "Poppins Light", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2.3px;
+  color: #6e626f;
+}
+.services-uiux-page .includes__item--1 .wrap {
+  padding: 20px 20px 10px;
+}
+.services-uiux-page .includes__item--2 .wrap {
+  padding: 20px 20px 32px;
+}
+.services-uiux-page .includes__item--4 .wrap {
+  padding: 20px 20px 44px;
 }
