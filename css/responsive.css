@@ -18,8 +18,11 @@
   .header-menu .container {
     padding-right: 0;
   }
+  .header-menu .row {
+    justify-content: space-between;
+  }
   .header-menu__btn-toggle {
-    margin-left: calc(100vw - 261px);
+    margin-right: 20px;
   }
   .header-menu__btn-toggle .fa-times {
     font-size: 18px;
