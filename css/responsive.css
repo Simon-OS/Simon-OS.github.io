@@ -16,7 +16,7 @@
     position: relative;
   }
   .header-menu__btn-toggle {
-    margin-left: calc(100vw - 261px);
+    margin-left: calc(100vw - 278px);
   }
   .header-menu__btn-toggle .fa-times {
     font-size: 18px;
