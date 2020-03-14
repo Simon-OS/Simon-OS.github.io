@@ -15,8 +15,11 @@
     border-bottom: none;
     position: relative;
   }
+  .header-menu .container {
+    padding-right: 0;
+  }
   .header-menu__btn-toggle {
-    margin-left: calc(100vw - 278px);
+    margin-left: calc(100vw - 261px);
   }
   .header-menu__btn-toggle .fa-times {
     font-size: 18px;
